@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dark App Store - Light Version</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>My App Collection (Light)</h1>
+        <input type="text" id="searchBox" placeholder="Search apps by name, description, or tags..." onkeyup="filterApps()">
+    </header>
+
+    <div class="apps-container" id="appsContainer">
+        <!-- Example App Card -->
+        <div class="app-card" data-description="A utility app for managing tasks" data-tags="productivity,tasks,tools">
+            <h2>MyApp1</h2>
+            <p>A utility app for managing tasks efficiently.</p>
+            <p class="tags">Tags: productivity, tasks, tools</p>
+            <a href="apps/myapp1.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card" data-description="Fun music player for your PC" data-tags="music,player,fun">
+            <h2>MyApp2</h2>
+            <p>Fun music player with customizable themes.</p>
+            <p class="tags">Tags: music, player, fun</p>
+            <a href="apps/myapp2.exe" download>Download EXE</a>
+        </div>
+
+        <div class="app-card" data-description="Collection of useful scripts and resources" data-tags="scripts,tools,zip">
+            <h2>MyApp3</h2>
+            <p>Collection of scripts and resources packaged in a zip.</p>
+            <p class="tags">Tags: scripts, tools, zip</p>
+            <a href="apps/myapp3.zip" download>Download ZIP</a>
+        </div>
+    </div>
+
+    <script>
+        function filterApps() {
+            const input = document.getElementById('searchBox').value.toLowerCase();
+            const apps = document.getElementById('appsContainer').getElementsByClassName('app-card');
+
+            for (let i = 0; i < apps.length; i++) {
+                const name = apps[i].getElementsByTagName('h2')[0].innerText.toLowerCase();
+                const description = apps[i].dataset.description.toLowerCase();
+                const tags = apps[i].dataset.tags.toLowerCase();
+
+                if (name.includes(input) || description.includes(input) || tags.includes(input)) {
+                    apps[i].style.display = "";
+                } else {
+                    apps[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

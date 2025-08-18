@@ -2,28 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My App Store</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Crack Version</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin-bottom: 40px;
+        }
+        .btn {
+            background-color: #1f1f1f;
+            color: #fff;
+            border: 2px solid #444;
+            padding: 15px 30px;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #333;
+            border-color: #888;
+        }
+    </style>
 </head>
 <body>
-    <h1>My App Collection</h1>
-    <div class="apps-container">
-        <div class="app-card">
-            <img src="images/myapp1.png" alt="MyApp1">
-            <h2>MyApp1</h2>
-            <a href="apps/myapp1.apk" download>Download APK</a>
-        </div>
-        <div class="app-card">
-            <img src="images/myapp2.png" alt="MyApp2">
-            <h2>MyApp2</h2>
-            <a href="apps/myapp2.exe" download>Download EXE</a>
-        </div>
-        <div class="app-card">
-            <img src="images/myapp3.png" alt="MyApp3">
-            <h2>MyApp3</h2>
-            <a href="apps/myapp3.zip" download>Download ZIP</a>
-        </div>
-    </div>
+    <h1>Choose your version:</h1>
+    <a class="btn" href="default.html">Normal Version (with images)</a>
+    <a class="btn" href="light.html">Light Version (without images)</a>
 </body>
 </html>

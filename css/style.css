@@ -29,10 +29,13 @@ header h1 {
 /* Apps container grid */
 .apps-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    max-width: 75%; /* ~4 cards wide, each min 220-250px */
+    margin: 0 auto;    /* center the grid */
     gap: 20px;
     padding: 20px;
 }
+
 
 /* App card styling */
 .app-card {
@@ -81,6 +84,42 @@ header h1 {
 .app-card a:hover {
     background-color: #555;
 }
+
+/* style.css */
+.windows { border: 2px solid blue; }
+.android { border: 2px solid green; }
+
+.btn-div {
+    background-color: #1e1e1e;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    background-color: #1f1f1f;
+    color: #fff;
+    border: 2px solid #444;
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #333;
+    border-color: #888;
+}
+
+#win:hover {
+border: 2px solid blue;
+}
+
+#and:hover {
+border: 2px solid green;
+}
+
 
 /* Mobile-specific adjustments */
 @media (max-width: 600px) {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Dark App Store</title>
-    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="icon" href="img/icon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,50 +13,200 @@
         <input type="text" id="searchBox" placeholder="Search apps by name, description, or tags..." onkeyup="filterApps()">
     </header>
 
+<div class="btn-div">
+  <button class="btn" onclick="filterApps('all')">All</button>
+  <button class="btn" id="win" onclick="filterApps('windows')">Windows</button>
+  <button class="btn" id="and" onclick="filterApps('android')">Android</button>
+</div>
+
     <div class="apps-container" id="appsContainer">
-        <!-- Example App Card -->
-        <div class="app-card" data-description="A utility app for managing tasks" data-tags="productivity,tasks,tools">
-            <img src="images/myapp1.png" alt="MyApp1">
-            <h2>MyApp1</h2>
-            <p>A utility app for managing tasks efficiently.</p>
-            <p class="tags">Tags: productivity, tasks, tools</p>
-            <a href="apps/myapp1.apk" download>Download APK</a>
+        <!-- Example App Cards -->
+
+        <div class="app-card android">
+        <img src="img/telegram.webp">
+        <h2>Telegram</h2><p>v11.14.1</p>
+        <p>Premium Functions (only client side)</p>
+        <p class="tags">Tags: social, chat, messenger, communication, friends, groups, calls</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/Telegram.v11.14.1.Premium.apk" download>Download APK</a>
         </div>
 
-        <div class="app-card" data-description="Fun music player for your PC" data-tags="music,player,fun">
-            <img src="images/myapp2.png" alt="MyApp2">
-            <h2>MyApp2</h2>
-            <p>Fun music player with customizable themes.</p>
-            <p class="tags">Tags: music, player, fun</p>
-            <a href="apps/myapp2.exe" download>Download EXE</a>
+        <div class="app-card android">
+        <img src="img/adobe-scan-pdf-scanner.png">
+        <h2>Adobe Scan</h2><p>v25.04.24</p>
+        <p>Premium Unlocked</p>
+        <p class="tags">Tags: pdf, scanner, tool</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/Adobe.Scan.v25.04.24.Premium.apk" download>Download APK</a>
         </div>
 
-        <div class="app-card" data-description="Collection of useful scripts and resources" data-tags="scripts,tools,zip">
-            <img src="images/myapp3.png" alt="MyApp3">
-            <h2>MyApp3</h2>
-            <p>Collection of scripts and resources packaged in a zip.</p>
-            <p class="tags">Tags: scripts, tools, zip</p>
-            <a href="apps/myapp3.zip" download>Download ZIP</a>
+        <div class="app-card android">
+        <img src="img/ag-auto-clicker.webp">
+        <h2>AG Auto Clicker</h2><p>v1.3.9</p>
+        <p>Premium Unlocked</p>
+        <p class="tags">Tags: clicker, tool</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/AG.Auto.Clicker.v1.3.9.Premium.apk" download>Download APK</a>
         </div>
+
+        <div class="app-card android">
+        <img src="img/brainly.webp">
+        <h2>Brainly</h2><p>v5.252.0</p>
+        <p>Premium Unlocked</p>
+        <p class="tags">Tags: school, edication, homework</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/Brainly.v5.252.0.Premium.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card android">
+        <img src="img/duolingo.jpeg">
+        <h2>Duolingo</h2><p>v6.43.4</p>
+        <p>Premium Unlocked</p>
+        <p class="tags">Tags: school, edication, homework, languages</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/Duolingo.v6.43.4.Premium.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card android">
+        <img src="img/geometry-dash-full.webp">
+        <h2>Geometry Dash</h2><p>v2.206</p>
+        <p>Full Game</p>
+        <p class="tags">Tags: game, reaction, clicking</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/Geometry.Dash.v2.206.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card android">
+        <img src="img/guitartuna.jpeg">
+        <h2>GuitarTuna</h2><p>v7.74.1</p>
+        <p>Premium Unlocked</p>
+        <p class="tags">Tags: tool, guitar, music</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/GuitarTuna.v7.74.1.Premium.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card android">
+        <img src="img/inshot.jpeg">
+        <h2>InShot</h2><p>v2.145.1500</p>
+        <p>Premium Unlocked</p>
+        <p class="tags">Tags: video, image, editor</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/InShot.v2.145.1500.Premium.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card android">
+        <img src="img/litube.png">
+        <h2>Litube</h2><p>v1.5.3</p>
+        <p>YouTube Premium Client</p>
+        <p class="tags">Tags: video, shorts, social media</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/litube.v1.5.3.Premium.YouTube.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card android">
+        <img src="img/nfc-tools-pro.png">
+        <h2>NFC Tools Pro</h2><p>v9.0.1</p>
+        <p>Paid</p>
+        <p class="tags">Tags: nfc, tools</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/NFC.Tools.PRO.v9.0.1.Paid.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card android">
+        <img src="img/party-hard-go.webp">
+        <h2>Party Hard Go</h2><p>v0.100034</p>
+        <p>Paid, Full</p>
+        <p class="tags">Tags: game, pixel, murder</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/Party.Hard.Go.v0.100034.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card android">
+        <img src="img/soundcloud.png">
+        <h2>SoundCloud</h2><p>v2025.07.02</p>
+        <p>Premium</p>
+        <p class="tags">Tags: music, player</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/SoundCloud.v2025.07.02.Premium.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card android">
+        <img src="img/super-dark-deception.webp">
+        <h2>Super Dark Deception</h2><p>v1.2.3</p>
+        <p>Paid, Full</p>
+        <p class="tags">Tags: game, pixel, horror</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/Super.Dark.Deception.v1.2.3.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card android">
+        <img src="img/twitch.webp">
+        <h2>Twitch</h2><p>v17.1.0</p>
+        <p>Twitch No Ads Client</p>
+        <p class="tags">Tags: video, stream, social media, shorts, live</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/Twitch.v17.1.0.No.Ads.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card android">
+        <img src="img/vflat-scan.webp">
+        <h2>vFlat Scan</h2><p>v1.12.19.250410.16c1e4a5a</p>
+        <p>Premium Unlocked</p>
+        <p class="tags">Tags: pdf, scanner, tool</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/vFlat.Scan.v1.12.19.250410.16c1e4a5a.Premium.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card android">
+        <img src="img/wavelet.webp">
+        <h2>Wavelet</h2><p>v25.06</p>
+        <p>Premium</p>
+        <p class="tags">Tags: music, eq, sound</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/Wavelet.v25.06.Premium.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card android">
+        <img src="img/waze.webp">
+        <h2>Waze Navigation & Live Traffic</h2><p>v5.8.1.0</p>
+        <p>Premium</p>
+        <p class="tags">Tags: map, gps, navigation</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/Waze.v5.8.1.0.Mod.apk" download>Download APK</a>
+        </div>
+
+        <div class="app-card android">
+        <img src="img/weather-&-radar.webp">
+        <h2>Weather & Radar Pro</h2><p>v2025.13.1</p>
+        <p>Premium</p>
+        <p class="tags">Tags: map, gps, weather</p>
+        <a href="https://github.com/MyW0rld/crack/releases/download/mod/Weather.Radar.Pro.v2025.13.1.Mod.apk" download>Download APK</a>
+        </div>
+
+
+        <!-- Example App Cards -->
     </div>
 
-    <script>
-        function filterApps() {
-            const input = document.getElementById('searchBox').value.toLowerCase();
-            const apps = document.getElementById('appsContainer').getElementsByClassName('app-card');
+<script>
+let currentFilter = "all"; // default filter
 
-            for (let i = 0; i < apps.length; i++) {
-                const name = apps[i].getElementsByTagName('h2')[0].innerText.toLowerCase();
-                const description = apps[i].dataset.description.toLowerCase();
-                const tags = apps[i].dataset.tags.toLowerCase();
+function filterApps(type) {
+  if (type) {
+    currentFilter = type; // update filter when button clicked
+  }
 
-                if (name.includes(input) || description.includes(input) || tags.includes(input)) {
-                    apps[i].style.display = "";
-                } else {
-                    apps[i].style.display = "none";
-                }
-            }
-        }
-    </script>
+  const input = document.getElementById('searchBox').value.toLowerCase();
+  const apps = document.querySelectorAll('.app-card');
+
+  apps.forEach(app => {
+    // take ALL text inside the card (h2, p, tags, etc.)
+    const allText = app.innerText.toLowerCase();
+
+    // also include data attributes
+    const description = (app.dataset.description || "").toLowerCase();
+    const tags = (app.dataset.tags || "").toLowerCase();
+
+    const matchesSearch =
+      allText.includes(input) ||
+      description.includes(input) ||
+      tags.includes(input);
+
+    const matchesType =
+      currentFilter === "all" || app.classList.contains(currentFilter);
+
+    if (matchesSearch && matchesType) {
+      app.style.display = "flex"; 
+    } else {
+      app.style.display = "none";
+    }
+  });
+}
+</script>
+
+
+
 </body>
 </html>
